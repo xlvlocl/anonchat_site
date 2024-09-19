@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+html { height: 101%; } /* always display scrollbars */
+body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a {
+  color: #0075B2; /* Цвет обычной ссылки */
+  text-decoration: none; /* Убираем подчёркивание у ссылок */
+}
+a:visited {
+  color: #8F8E8E; /* Цвет посещённой ссылки */
+}
+a:hover {
+  color: #CE242B; /* Цвет ссылки при наведении */
+}
+
+:root {
+    --body-font  : "Montserrat", sans-serif;
+    --heading-font  : "syne", sans-serif;
+    }
+
+
+main {
+  max-width: 38rem;
+  padding: 2rem;
+  margin: auto;
+}
+
+body {
+    --bs-primary: #3FC3D7;
+    --bs-body-color: white;
+}
+body {
+  margin: 0;
+  color: #fff;
+  /* Растягиваем body по высоте html */
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+body { 
+    font-family: var(--body-font);
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--bs-body-color);
+    background: radial-gradient(circle at bottom, #03064f 0, black 100%);
+      overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6 { 
+    font-family: var(--heading-font);
+    color: var(--bs-heading-color);
+}
+h1,h2,h3,h4,h5,h6, .navbar, .btn, a, ul, li, i, img, p, div {
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.space {
+  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 110%;
+  height: 110%;
+}
+
+.star {
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.4);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.container {
+    margin-top: 5rem;
+}
+
+.navbar { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.btn {
+    background-color: #8F8E8E;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #7f7f7f;
+    box-shadow: 0px 10px 80px 20px rgba(63, 195, 215, 0.4);
+    outline: gray;
+}
+body{
+margin:0;
+overflow-x:hidden;
+}
+
+.footer{
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
